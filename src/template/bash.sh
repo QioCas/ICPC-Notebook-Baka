@@ -16,7 +16,7 @@ for((i = 1; i <= 1000; ++i)); do {
     ./brute < test.in > test.ans
 
     # External grading program:
-    # ~/Cp/Stress/checker > /dev/null || {
+    # checker > /dev/null || {
     # General:
     diff -Z test.out test.ans > /dev/null || {
         echo "WA on the following test:"
