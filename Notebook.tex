@@ -2,8 +2,10 @@
 % These codes should be guaranteed, fast enough, short and easy to type.
 
 \documentclass[portrait, 8pt, a4paper, oneside, twocolumn]{extarticle}
-\usepackage{teamnote}
 
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{teamnote}
 % Add pdf pages 
 \usepackage{pdfpages}
 
@@ -26,11 +28,11 @@
 \noindent\hrulefill
 
     \section{Template}
-
     \Algorithm{Template}
     {}
     {}
     {cpp}{src/template/template.cpp}
+
     \noindent\hrulefill
 
     \Algorithm{Debug}
@@ -155,9 +157,9 @@
     {}
     {cpp}{src/dp/dnc.h}
     \noindent\hrulefill
-
+	
 \section{Strings}
-
+	
     \Algorithm{KMP}
     {}
     {}
